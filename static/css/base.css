@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
-    font-family: 'Raleway';
+    font-family: 'Roboto';
 }
 
 /* from Bulma */
@@ -15,13 +15,13 @@ body {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 1rem;
+    width: 1rem;
 }
 
 .logo-font {
     text-transform: uppercase;
-    font-family: 'Roboto';
+    font-family: 'Raleway';
 }
 
 .main-logo-link {
@@ -38,8 +38,26 @@ body {
     color: white;
 }
 
+/* -------------------------------- Colors */
+
 .text-black {
     color: #000 !important;
+}
+
+.text-grey {
+    color: #8E8D8A !important;
+}
+
+.text-blue {
+    color: #7395AE !important;
+}
+
+.text-egg {
+    color: #EAE7DC;
+}
+
+.text-sand {
+    color: #D8C3A5; 
 }
 
 .border-black {
