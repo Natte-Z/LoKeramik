@@ -1,0 +1,67 @@
+[
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001340155",
+      "name": "Frukostskål",
+      "description": "The breakfast bowl is made with clay material and burned in a nice petrol colour. Handmade, every item is unique.",
+      "price": 250,
+      "colour": "Petrol",
+      "category": 1,
+      "image": "lo_K_7686.jpeg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001600425",
+      "name": "Salladskål",
+      "description": "The salladbowl with its unique carving. It belongs to the mint collection. Handmade, every item is unique.",
+      "price": 58.99,
+      "colour": "Mint",
+      "category": 1,
+      "image": "lo_K_7702.jpeg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001730010",
+      "name": "Sockerskål",
+      "description": "The sugarbowl with Lo Keramiks signature carvings. Handmade, every item is unique.",
+      "price": 250,
+      "colour": "Sand",
+      "category": 1,
+      "image": "lo_K_7718.jpeg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5001890157",
+      "name": "Kanna",
+      "description": "Watercane. Belongs to the mint collection and with Lo Keramiks signature carvings. Handmade, every item is unique.",
+      "price": 250,
+      "colour": "Mint",
+      "category": 1,
+      "image": "lo_K_7712.jpeg"
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002111605",
+      "name": "Stor skål",
+      "description": "A big bowl dopped in a marbled sand-green glaze. Handmade, every item is unique.",
+      "price": 250,
+      "colour": "Marbled",
+      "category": 2,
+      "image": "lo_K_7703.jpeg"
+    }
+  }
+]

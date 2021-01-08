@@ -28,6 +28,10 @@ body {
     width: fit-content;
 }
 
+.header-corner {
+    
+}
+/* ---
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -38,7 +42,7 @@ body {
     color: white;
 }
 
-/* -------------------------------- Colors */
+----------------------------- Colors */
 
 .text-black {
     color: #000 !important;
