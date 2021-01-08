@@ -49,7 +49,7 @@ body {
 }
 
 .text-grey {
-    color: #8E8D8A !important;
+    color: rgb(143, 141, 138) !important;
 }
 
 .text-blue {
@@ -57,7 +57,7 @@ body {
 }
 
 .text-egg {
-    color: #EAE7DC;
+    color: #eae7dc;
 }
 
 .text-sand {
@@ -67,6 +67,31 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
+.overlay {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
+}
+
+/* -------------------------------- Products */
+
+
+.centered-price {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    background-color: rgba(143, 141, 138, 0.4);
+    height: 25px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
 
 /* -------------------------------- Media Queries */
 

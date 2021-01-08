@@ -8,6 +8,7 @@
       "description": "The breakfast bowl is made with clay material and burned in a nice petrol colour. Handmade, every item is unique.",
       "price": 250,
       "colour": "Petrol",
+      "material": "Clay",
       "category": 1,
       "image": "lo_K_7686.jpeg"
     }
@@ -21,6 +22,7 @@
       "description": "The salladbowl with its unique carving. It belongs to the mint collection. Handmade, every item is unique.",
       "price": 58.99,
       "colour": "Mint",
+      "material": "Clay",
       "category": 1,
       "image": "lo_K_7702.jpeg"
     }
@@ -34,7 +36,8 @@
       "description": "The sugarbowl with Lo Keramiks signature carvings. Handmade, every item is unique.",
       "price": 250,
       "colour": "Sand",
-      "category": 1,
+      "material": "Clay",
+      "category": 2,
       "image": "lo_K_7718.jpeg"
     }
   },
@@ -47,7 +50,8 @@
       "description": "Watercane. Belongs to the mint collection and with Lo Keramiks signature carvings. Handmade, every item is unique.",
       "price": 250,
       "colour": "Mint",
-      "category": 1,
+      "material": "Clay",
+      "category": 2,
       "image": "lo_K_7712.jpeg"
     }
   },
@@ -60,7 +64,8 @@
       "description": "A big bowl dopped in a marbled sand-green glaze. Handmade, every item is unique.",
       "price": 250,
       "colour": "Marbled",
-      "category": 2,
+      "material": "Stoneware",
+      "category": 1,
       "image": "lo_K_7703.jpeg"
     }
   }
