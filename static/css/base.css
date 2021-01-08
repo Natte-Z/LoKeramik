@@ -78,6 +78,16 @@ body {
 	z-index: -1;
 }
 
+.overlay-detail {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: #eae7dc;
+	z-index: -1;
+}
+
 /* -------------------------------- Products */
 
 
