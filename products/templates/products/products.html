@@ -19,6 +19,39 @@
             </div>
         </div>
         <div class="row">
+        <ul class="col-12 col-lg-3 navbar-nav w-auto mx-auto text-center">
+        <li class="nav-item dropdown">
+            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
+                By Price
+            </a>
+            <a href="{% url 'products' %}?sort=colour&direction=asc" class="dropdown-item ">
+                By Colour
+            </a>
+            <a href="{% url 'products' %}?sort=material&direction=desc" class="dropdown-item ">
+                By Material
+            </a>
+        </li>
+        </ul>
+        </div>
+
+        <div class="navbar navbar-expand-lg navbar-light w-100" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item dropdown">
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=colour&direction=desc" class="dropdown-item ">By Colour</a>
+                <a href="{% url 'products' %}?sort=material&direction=asc" class="dropdown-item ">By Material</a>
+            </div>
+        </li>
+    </ul>
+        </div>
+       
+
+
+
+
+
+        <div class="row">
             <div class="product-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
