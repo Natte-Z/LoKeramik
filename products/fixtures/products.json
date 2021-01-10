@@ -9,7 +9,7 @@
       "price": 250,
       "colour": "Petrol",
       "material": "Clay",
-      "category": 1,
+      "category": 2,
       "image": "lo_K_7686.jpeg"
     }
   },
@@ -23,7 +23,7 @@
       "price": 58.99,
       "colour": "Mint",
       "material": "Clay",
-      "category": 1,
+      "category": 2,
       "image": "lo_K_7702.jpeg"
     }
   },
@@ -37,7 +37,7 @@
       "price": 250,
       "colour": "Sand",
       "material": "Clay",
-      "category": 2,
+      "category": 1,
       "image": "lo_K_7718.jpeg"
     }
   },
@@ -51,7 +51,7 @@
       "price": 250,
       "colour": "Mint",
       "material": "Clay",
-      "category": 2,
+      "category": 1,
       "image": "lo_K_7712.jpeg"
     }
   },
@@ -65,7 +65,7 @@
       "price": 250,
       "colour": "Marbled",
       "material": "Stoneware",
-      "category": 1,
+      "category": 2,
       "image": "lo_K_7703.jpeg"
     }
   }
