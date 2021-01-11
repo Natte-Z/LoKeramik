@@ -88,6 +88,11 @@ body {
 	z-index: -1;
 }
 
+a.category-badge > span.badge:hover {
+    background: #eae7dc !important;
+    color: #7395AE !important;
+}
+
 /* -------------------------------- Products */
 
 
@@ -99,12 +104,25 @@ body {
     height: 25px;
     display: inline-block;
     overflow: hidden;
+}
 
+.centered-category {
+    
+    background-color: rgba(143, 141, 138, 0.4);
+    
 }
 
 
 /* -------------------------------- Media Queries */
 
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
@@ -123,6 +141,12 @@ body {
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 124px;
     }
 }
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 76px;
+    }

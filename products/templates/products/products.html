@@ -1,94 +1,140 @@
 {% extends "base.html" %}
 {% load static %}
-
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
+<div class="container header-container">
+   <div class="row">
+      <div class="col"></div>
+   </div>
+</div>
 {% endblock %}
-
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
-                <hr class="w-50 mb-1">
+<div class="overlay"></div>
+<div class="container-fluid">
+<div class="row">
+   <div class="col text-center mt-3">
+      <h2 class="logo-font">Products</h2>
+      {% for c in current_categories %}
+      <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+      <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+      </a>
+      {% endfor %}
+      <!--
+         <a class="category-badge text-decoration-none" href="{% url 'products' %}?sort=price&direction=asc">
+         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">
+         By Price
+         </span>
+         </a>
+         <a class="category-badge text-decoration-none" href="{% url 'products' %}?sort=colour&direction=asc">
+         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">
+         By Colour
+         </span>
+         </a>
+         <a class="category-badge text-decoration-none" href="{% url 'products' %}?sort=material&direction=desc">
+         <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">
+         By Material
+         </span>
+         </a>
+         -->               
+      <hr class="w-50 mb-1">
+   </div>
+</div>
+<div class="row">
+<div class="product-container col-10 offset-1">
+   <div class="row mt-1 mb-2">
+      <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+         <div class="sort-select-wrapper w-50">
+            <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+            <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+            <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+            <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+            <option value="colour_asc" {% if current_sorting == 'colour_asc' %}selected{% endif %}>Colour (A-Z)</option>
+            <option value="colour_desc" {% if current_sorting == 'colour_desc' %}selected{% endif %}>Colour (A-Z)</option>
+            <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+            <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+            <option value="material_asc" {% if current_sorting == 'material_asc' %}selected{% endif %}>Material (A-Z)</option>
+            <option value="material_desc" {% if current_sorting == 'material_desc' %}selected{% endif %}>Material (Z-A)</option>
+            </select>
+         </div>
+      </div>
+      <div class="col-12 col-md-6 order-md-first">
+         <p class="text-muted mt-3 text-center text-md-left">
+            {% if search_term or current_categories or current_sorting != 'None_None' %}
+            <span class="small "><a href="{% url 'products' %}" class="text-blue">Products Home</a> | </span>
+            {% endif %}
+            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+         </p>
+      </div>
+   </div>
+   <!--
+      <div class="row">
+          <ul class="col-12 col-lg-3 navbar-nav w-auto mx-auto text-center ">
+              <li class="nav-item dropdown">
+                  <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
+                      By Price
+                  </a>
+                  {% if product.category %}
+                  <p class="small mt-1 mb-0 centered-category">
+                      <a class="text-egg centered-category" href="{% url 'products' %}?category={{ product.category.name }}">
+                          {{ product.category.friendly_name }}
+                      </a>
+                  </p>
+                  {% endif %}
+                  <a href="{% url 'products' %}?sort=colour&direction=asc" class="dropdown-item ">
+                      By Colour
+                  </a>
+                  <a href="{% url 'products' %}?sort=material&direction=desc" class="dropdown-item ">
+                      By Material
+                  </a>
+                  {% if search_term or current_categories or current_sorting != 'None_None' %}
+                  <span class="small text-blue"><a href="{% url 'products' %}" class="text-blue">Products Home</a> | </span>
+                  {% endif %}
+                  {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+              </li>
+          </ul>
+      </div>
+      
+      -->
+   <div class="row">
+      <div class="product-container col-10 offset-1">
+         <div class="row mt-1 mb-2"></div>
+         <div class="row">
+            {% for product in products %}
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+               <div class="card h-100 border-0">
+                  <a href="{% url 'product_detail' product.id %}">
+                     <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                     <div class="centered-price font-weight-bold text-egg"> 
+                        {{ product.price }} SEK   
+                     </div>
+                     <div class=" font-weight-bold text-egg centered-category"> 
+                        {{ product.category }}   
+                     </div>
+                  </a>
+               </div>
             </div>
-        </div>
-        <div class="row">
-        <ul class="col-12 col-lg-3 navbar-nav w-auto mx-auto text-center">
-        <li class="nav-item dropdown">
-            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
-                By Price
-            </a>
-            <a href="{% url 'products' %}?sort=colour&direction=asc" class="dropdown-item ">
-                By Colour
-            </a>
-            <a href="{% url 'products' %}?sort=material&direction=desc" class="dropdown-item ">
-                By Material
-            </a>
-        </li>
-        </ul>
-        </div>
-
-        <div class="navbar navbar-expand-lg navbar-light w-100" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown">
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=colour&direction=desc" class="dropdown-item ">By Colour</a>
-                <a href="{% url 'products' %}?sort=material&direction=asc" class="dropdown-item ">By Material</a>
+            {% if forloop.counter|divisibleby:1 %}
+            <div class="col-12 d-sm-none mb-5">
+               <hr>
             </div>
-        </li>
-    </ul>
-        </div>
-       
-
-
-
-
-
-        <div class="row">
-            <div class="product-container col-10 offset-1">
-                <div class="row mt-1 mb-2"></div>
-                <div class="row">
-                    {% for product in products %}
-                        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-                            <div class="card h-100 border-0">
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                                    <div class="centered-price font-weight-bold text-egg"> 
-                                        {{ product.price }} SEK   
-                                    </div>
-                                </a>     
-                            </div>
-                        </div>
-                        {% if forloop.counter|divisibleby:1 %}
-                            <div class="col-12 d-sm-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:2 %}
-                            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:3 %}
-                            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                        {% if forloop.counter|divisibleby:4 %}
-                            <div class="col-12 d-none d-xl-block mb-5">
-                                <hr>
-                            </div>
-                        {% endif %}
-                    {% endfor %}
-                </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:2 %}
+            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+               <hr>
             </div>
-        </div>
-    </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:3 %}
+            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+               <hr>
+            </div>
+            {% endif %}
+            {% if forloop.counter|divisibleby:4 %}
+            <div class="col-12 d-none d-xl-block mb-5">
+               <hr>
+            </div>
+            {% endif %}
+            {% endfor %}
+         </div>
+      </div>
+   </div>
+</div>
 {% endblock %}
