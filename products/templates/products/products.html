@@ -13,30 +13,13 @@
 <div class="row">
    <div class="col text-center mt-3">
       <h2 class="logo-font">Products</h2>
-      {{ current_categories }}
-      {% for c in current_categories %}
-      <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-      <span class="p-2 mt-2 badge badge-white text-blue rounded-0 border border-grey">{{ c.friendly_name }}</span>
-      </a>
-      {% endfor %}
-      <!--
-         <a class="category-badge text-decoration-none" href="{% url 'products' %}?sort=price&direction=asc">
-         <span class="p-2 mt-2 badge badge-white text-grey rounded-0 border border-dark">
-         By Price
-         </span>
-         </a>
-         <a class="category-badge text-decoration-none" href="{% url 'products' %}?sort=colour&direction=asc">
-         <span class="p-2 mt-2 badge badge-white text-grey rounded-0 border border-dark">
-         By Colour
-         </span>
-         </a>
-         <a class="category-badge text-decoration-none" href="{% url 'products' %}?sort=material&direction=desc">
-         <span class="p-2 mt-2 badge badge-white text-grey rounded-0 border border-dark">
-         By Material
-         </span>
-         </a>
-         -->               
-      <hr class="w-50 mb-1">
+        {{ current_categories }}
+        {% for c in current_categories %}
+        <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
+        <span class="p-2 mt-2 badge badge-white text-blue rounded-0 border border-grey">{{ c.friendly_name }}</span>
+        </a>
+        {% endfor %}              
+        <hr class="w-50 mb-1">
    </div>
 </div>
 <div class="row">
@@ -66,50 +49,18 @@
          </p>
       </div>
    </div>
-   <!--
-      <div class="row">
-          <ul class="col-12 col-lg-3 navbar-nav w-auto mx-auto text-center ">
-              <li class="nav-item dropdown">
-                  <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">
-                      By Price
-                  </a>
-                  {% if product.category %}
-                  <p class="small mt-1 mb-0 centered-category">
-                      <a class="text-egg centered-category" href="{% url 'products' %}?category={{ product.category.name }}">
-                          {{ product.category.friendly_name }}
-                      </a>
-                  </p>
-                  {% endif %}
-                  <a href="{% url 'products' %}?sort=colour&direction=asc" class="dropdown-item ">
-                      By Colour
-                  </a>
-                  <a href="{% url 'products' %}?sort=material&direction=desc" class="dropdown-item ">
-                      By Material
-                  </a>
-                  {% if search_term or current_categories or current_sorting != 'None_None' %}
-                  <span class="small text-blue"><a href="{% url 'products' %}" class="text-blue">Products Home</a> | </span>
-                  {% endif %}
-                  {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
-              </li>
-          </ul>
-      </div>
-      
-      -->
    <div class="row">
       <div class="product-container col-10 offset-1">
          <div class="row mt-1 mb-2"></div>
          <div class="row">
             {% for product in products %}
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
-               <div class="card h-100 border-0">
+               <div class="cardh-100 border-0 card-image">
                   <a href="{% url 'product_detail' product.id %}">
                      <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
-                     <div class="centered-price font-weight-bold text-egg"> 
+                     <p class="font-weight-bold text-grey centered-category"> 
                         {{ product.price }} SEK   
-                     </div>
-                     <div class=" font-weight-bold text-egg centered-category"> 
-                        {{ product.category }}   
-                     </div>
+                     </p>
                   </a>
                </div>
             </div>

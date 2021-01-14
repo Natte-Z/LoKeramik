@@ -33,9 +33,10 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-        elif not 'category' in request.GET:
+        else:
             categories = Category.objects.get()
             print(categories)
+
 
     current_sorting = f'{sort}_{direction}'
 
