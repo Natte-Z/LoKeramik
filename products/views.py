@@ -9,12 +9,14 @@ from .models import Product, Category
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
+    print(f"REQUEST: {request}")
     products = Product.objects.all()
     categories = None
     sort = None
     direction = None
 
-    if request.GET:
+
+    if request.method == "GET":
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -34,8 +36,8 @@ def all_products(request):
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
         else:
-            categories = Category.objects.get()
-            print(categories)
+            categories = Category.objects.all()
+            print(f"ELSE CATEGORIES: {categories}")
 
 
     current_sorting = f'{sort}_{direction}'
