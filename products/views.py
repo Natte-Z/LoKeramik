@@ -9,7 +9,6 @@ from .models import Product, Category
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
-    print(f"REQUEST: {request}")
     products = Product.objects.all()
     categories = None
     sort = None
@@ -37,7 +36,6 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
         else:
             categories = Category.objects.all()
-            print(f"ELSE CATEGORIES: {categories}")
 
 
     current_sorting = f'{sort}_{direction}'

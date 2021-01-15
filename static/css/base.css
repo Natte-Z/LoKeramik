@@ -135,6 +135,24 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
+.btn-grey {
+    background: #8f8d8a;
+    color: white;
+}
+
+.btn-outline-grey {
+    background: white;
+    color: #8f8d8a !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #8f8d8a;
+}
+
+.btn-outline-grey:hover,
+.btn-outline-grey:active,
+.btn-outline-grey:focus {
+    background: #8f8d8a;
+    color: white !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
