@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-
+<!--------------------------------PageHeader-->
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -10,13 +10,53 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-10 my-auto">
-                <h3 class="text-lg-right logo-font text-blue">
-                    Ceramics made in Stockholm
-                </h3>
-            </div>
+
+<!--------------------------------HomePageOverview-->
+    <section class="backgroundImage">
+        <div class="text-blue homeText">
+            Ceramics made in Stockholm
         </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row mx-20">
+               <div class="col-lg-6 col-sm-12 d-flex align-items-start flex-column">
+                  <h4 class="overviewTitle">Ceramic Products</h4>
+                  <div class="overviewText">
+                    Throughout the year new limited editions for the online shop go live. To give creativity no limitations each collection varies in shape, style, products and colors. 
+                  </div>
+                  <a href="#" class="button mt-auto">Learn more</a>
+               </div>
+               <div class="col-lg-6 col-sm-12 d-flex align-items-start flex-column">
+                  <h4 class="overviewTitle">Course Overview</h4>
+                  <div class="overviewText">
+                    Since 2018 Lotta has been passing on her knowledge about the making of pots. Next to her workshops, where group classes of up to five as well as one on one sessions in hand building and on the potters wheel take place. The courses focuses on the people and can therefore be freely designed to the wishes of the customers after discussion with Lotta. 
+                  </div>
+                  <a href="#" class="button mt-20">Learn more</a>
+               </div>
+            </div>
+         </div>
+      </section>
+<!--------------------------------Images-->
+    <div>
+        Images (3)
+    </div>
+<!--------------------------------ContactOverview-->
+    <section>
+         <div class="container-fluid">
+            <div class="row contactInfo card">
+               <div class="col-lg-6 col-sm-12  d-flex align-items-start flex-column">
+                  <p>Want to book a course or have a question regarding the products? Get in touch! </p>
+                  <a href="x" class="button buttonContact">Contact us</a>
+               </div>
+               <div class="col-lg-6 col-sm-12  d-flex align-items-start flex-column">
+                  <img src="media/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg" src="" alt="phone" class="img-fluid">
+               </div>
+            </div>
+         </div>
+    </section>
+<!--------------------------------Footer-->
+    <div>
+        footer
     </div>
 {% endblock %}
