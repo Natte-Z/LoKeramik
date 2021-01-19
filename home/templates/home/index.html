@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+
 <!--------------------------------PageHeader-->
 {% block page_header %}
     <div class="container header-container">
@@ -23,34 +24,44 @@
                <div class="col-lg-6 col-sm-12 d-flex align-items-start flex-column">
                   <h4 class="overviewTitle">Ceramic Products</h4>
                   <div class="overviewText">
-                    Throughout the year new limited editions for the online shop go live. To give creativity no limitations each collection varies in shape, style, products and colors. 
+                    Throughout the year new limited editions for the online shop go live. To give creativity no limitations each collection varies in shape, style, products and colors. The products are available in different showrooms throughout the city of Stockholm, but most of them can be picked up at Hårnästet on Döbelnsgatan in Vasastan. 
                   </div>
-                  <a href="#" class="button mt-auto">Learn more</a>
+                  <a href="{% url 'products' %}" class="buttonContact text-blue d-flex flex-row">Products</a>
                </div>
                <div class="col-lg-6 col-sm-12 d-flex align-items-start flex-column">
                   <h4 class="overviewTitle">Course Overview</h4>
                   <div class="overviewText">
                     Since 2018 Lotta has been passing on her knowledge about the making of pots. Next to her workshops, where group classes of up to five as well as one on one sessions in hand building and on the potters wheel take place. The courses focuses on the people and can therefore be freely designed to the wishes of the customers after discussion with Lotta. 
                   </div>
-                  <a href="#" class="button mt-20">Learn more</a>
+                  <a href="#" class="buttonContact text-blue d-flex flex-row">Courses</a>
                </div>
             </div>
          </div>
       </section>
 <!--------------------------------Images-->
-    <div>
-        Images (3)
+    <div class="container">
+        <div class="row d-flex justify-content-between mt-5 mb-5">
+            <div class="col-lg-3 col-sm-12">
+                <img src="media/pexels-gabby-k-5302911.jpg" alt="ceramics_handmade" class="img-fluid">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <img src="media/pexels-gabby-k-5302904.jpg" alt="ceramics_handmade_2" class="img-fluid">
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <img src="media/pexels-gabby-k-5302906.jpg" alt="ceramics_handmade_3" class="img-fluid">
+            </div>
+        </div>
     </div>
 <!--------------------------------ContactOverview-->
     <section>
-         <div class="container-fluid">
-            <div class="row contactInfo card">
-               <div class="col-lg-6 col-sm-12  d-flex align-items-start flex-column">
+         <div class="container">
+            <div class="row contactInfo ">
+               <div class="col-6">
                   <p>Want to book a course or have a question regarding the products? Get in touch! </p>
-                  <a href="x" class="button buttonContact">Contact us</a>
+                  <a href="x" class="buttonContact text-blue">Contact us</a>
                </div>
-               <div class="col-lg-6 col-sm-12  d-flex align-items-start flex-column">
-                  <img src="media/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg" src="" alt="phone" class="img-fluid">
+               <div class="col-6">
+                  <img src="media/pawel-czerwinski--0xCCPIbl3M-unsplash.jpg" alt="phone" class="img-fluid">
                </div>
             </div>
          </div>

@@ -94,7 +94,6 @@ a.category-badge > span.badge:hover {
 .backgroundImage {
     background: url('/media/homepage_background.jpg') no-repeat center fixed;
     background-size: cover;
-
     height: 100%;
     width: 100%;
 }
@@ -117,7 +116,13 @@ a.category-badge > span.badge:hover {
     color: #3d3d3f;
 }
 
-.button {
+.image_ceramics {
+    background-size: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.buttonContact {
     font-family: 'Roboto', sans-serif;
     background-color: #f9f8fd;
     border: 2px solid #7395AE;
@@ -129,25 +134,40 @@ a.category-badge > span.badge:hover {
     font-size: 12px;
     cursor: pointer;
     vertical-align: baseline;
+    margin-top: 20px;
 }
 
 .contactInfo {
-    background-color: #f9f8fd;
-    margin: 30px;
+    background-color: #eae7dc;
+    padding: 50px;
+    font-weight: bold;
+    color: #3d3d3f;
+    text-align: center;
+    margin-top: 20px;
     font-size: 16px;
     height: auto;
+    display: flex;
+    flex-direction: none !important;
 }
+
 .contactContent{
     padding: 50px;
     font-weight: bold;
     color: #3d3d3f;
     text-align: center;
     margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
+
 .phoneImageWrapper {
     width: 100%;
     height: auto;
     padding: 0;
+}
+
+.ceramics_images {
+    margin: 40px;
 }
 
 /* -------------------------------- Products */
