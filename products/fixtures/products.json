@@ -5,8 +5,8 @@
     "fields": {
       "sku": "pp5001340155",
       "name": "Frukostskål",
-      "description": "The breakfast bowl is made with clay material and burned in a nice petrol colour. Handmade, every item is unique.",
-      "price": 250,
+      "description": "The breakfast bowl is made with clay material and burned in a nice petrol colour. Handmade, every item is unique and can differ from image.",
+      "price": 275,
       "colour": "Petrol",
       "material": "Clay",
       "category": 2,
@@ -19,8 +19,8 @@
     "fields": {
       "sku": "pp5001600425",
       "name": "Salladskål",
-      "description": "The salladbowl with its unique carving. It belongs to the mint collection. Handmade, every item is unique.",
-      "price": 58.99,
+      "description": "The salladbowl with its unique carving. It belongs to the mint collection. Handmade, every item is unique and can differ from image.",
+      "price": 375,
       "colour": "Mint",
       "material": "Clay",
       "category": 2,
@@ -33,8 +33,8 @@
     "fields": {
       "sku": "pp5001730010",
       "name": "Sockerskål",
-      "description": "The sugarbowl with Lo Keramiks signature carvings. Handmade, every item is unique.",
-      "price": 250,
+      "description": "The sugarbowl with Lo Keramiks signature carvings. Handmade, every item is unique and can differ from image.",
+      "price": 400,
       "colour": "Sand",
       "material": "Clay",
       "category": 1,
@@ -47,8 +47,8 @@
     "fields": {
       "sku": "pp5001890157",
       "name": "Kanna",
-      "description": "Watercane. Belongs to the mint collection and with Lo Keramiks signature carvings. Handmade, every item is unique.",
-      "price": 250,
+      "description": "Watercane. Belongs to the mint collection and with Lo Keramiks signature carvings. Handmade, every item is unique and can differ from image.",
+      "price": 450,
       "colour": "Mint",
       "material": "Clay",
       "category": 1,
@@ -61,12 +61,236 @@
     "fields": {
       "sku": "pp5002111605",
       "name": "Stor skål",
-      "description": "A big bowl dopped in a marbled sand-green glaze. Handmade, every item is unique.",
-      "price": 250,
+      "description": "A big bowl dopped in a marbled sand-green glaze. Handmade, every item is unique and can differ from image.",
+      "price": 425,
       "colour": "Marbled",
       "material": "Stoneware",
       "category": 2,
       "image": "lo_K_7703.jpeg"
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002260206",
+      "name": "Espressokopp ",
+      "description": "A small cup to drink espresso or other beverages. Also useful as a vase in the mint color. Handmade, every item is unique and can differ from image.",
+      "price": 175,
+      "colour": "Mint",
+      "material": "Clay",
+      "category": 2,
+      "image": "_DSC7540.JPG"
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002440521",
+      "name": "Tekanna",
+      "description": "A very unique, vintage themed tea pot in petrol colouring. Handmade, every item is unique and can differ from image.",
+      "price": 950,
+      "colour": "Petrol",
+      "material": "Clay",
+      "category": 2,
+      "image": "9FF29548-752E-446E-B9A3-003C1BCC11CB.jpg"
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002601115",
+      "name": "Vas Crater",
+      "description": "A medium sized vase in sand with the unique crater design. Handmade, every item is unique and can differ from image.",
+      "price": 600,
+      "colour": "Sand",
+      "material": "Clay",
+      "category": 3,
+      "image": "73BA4B1C-30D9-4ABF-9C45-61C8DABFB35F.jpg"
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002690715",
+      "name": "Fågelmatare",
+      "description": "A bird water or food nest. Handmade, every item is unique and can differ from image.",
+      "price": 650,
+      "colour": "Mint",
+      "material": "Clay",
+      "category": 3,
+      "image": "fågel_6504.JPEG"
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002701115",
+      "name": "Durkslag",
+      "description": "A useful tool for washing fruits, berries, sallads or letting out the water when making pasta. Handmade, every item is unique and can differ from image.",
+      "price": 650,
+      "colour": "Mint",
+      "material": "Clay",
+      "category": 1,
+      "image": "IMG_0382.JPG"
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002761055",
+      "name": "Tekopp",
+      "description": "The teacup, 0,4l. Handmade, every item is unique and can differ from image.",
+      "price": 275,
+      "colour": "Marbled",
+      "material": "Clay",
+      "category": 2,
+      "image": "IMG_0965.JPG"
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820069",
+      "name": "Tekopp",
+      "description": "The teacup, 0,4l. Handmade, every item is unique and can differ from image.",
+      "price": 275,
+      "colour": "Petrol",
+      "material": "Clay",
+      "category": 2,
+      "image": "_DSC7554.JPG"
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002820147",
+      "name": "Gran Mint",
+      "description": "Christmastree decoration that can be used as a light. Handmade, every item is unique and can differ from image.",
+      "price": 400,
+      "colour": "Mint",
+      "material": "Clay",
+      "category": 3,
+      "image": "IMG_7967.JPG"
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002910572",
+      "name": "Gran forest",
+      "description": "Christmastree decoration that can be used as a light. Handmade, every item is unique and can differ from image.",
+      "price": 400,
+      "colour": "Forest",
+      "material": "Clay",
+      "category": 3,
+      "image": "Lotta_Julgran_7383.jpeg"
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5002990740",
+      "name": "Slevfat",
+      "description": "Side holder. Handmade, every item is unique and can differ from image.",
+      "price": 150,
+      "colour": "Sand",
+      "material": "Clay",
+      "category": 1,
+      "image": "IMG_9325.JPG"
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003050248",
+      "name": "Ampel krater",
+      "description": "Hanging plant pot with crater design. Handmade, every item is unique and can differ from image.",
+      "price": 450,
+      "colour": "Mint",
+      "material": "Clay",
+      "category": 3,
+      "image": "lo_K_7675.JPG"
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003070787",
+      "name": "Ampel",
+      "description": "Hanging plant pot. Handmade, every item is unique and can differ from image.",
+      "price": 450,
+      "colour": "Sand",
+      "material": "Clay",
+      "category": 3,
+      "image": "lo_K_7677.JPG"
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090182",
+      "name": "Ampel Krater Sand",
+      "description": "Hanging plant pot. Handmade, every item is unique and can differ from image.",
+      "price": 450,
+      "colour": "Sand",
+      "material": "Clay",
+      "category": 3,
+      "image": "lo_K_7708.JPG"
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003090186",
+      "name": "Äggkopp Krater",
+      "description": "An egg cup with crater design. Handmade, every item is unique and can differ from image.",
+      "price": 75,
+      "colour": "Sand",
+      "material": "Clay",
+      "category": 2,
+      "image": "lo_K_7733.JPG"
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003161326",
+      "name": "Sticklingkruka",
+      "description": "A small flowerpot. Handmade, every item is unique and can differ from image.",
+      "price": 250,
+      "colour": "Petrol",
+      "material": "Clay",
+      "category": 3,
+      "image": "Lotta_20181202_2632.JPG"
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "sku": "pp5003230723",
+      "name": "Liten vas",
+      "description": ". Handmade, every item is unique and can differ from image.",
+      "price": 150,
+      "colour": "Mint",
+      "material": "Clay",
+      "category": 3,
+      "image": "Lotta_20181202_2647.JPG"
     }
   }
 ]
