@@ -41,7 +41,7 @@ body {
 ----------------------------- Colors */
 
 .text-black {
-    color: #000 !important;
+    color: #3d3d3f !important;
 }
 
 .text-grey {
@@ -50,6 +50,7 @@ body {
 
 .text-blue {
     color: #7395AE !important;
+    font-family: 'Railway', sans-serif;
 }
 
 .text-egg {
@@ -62,6 +63,14 @@ body {
 
 .border-grey {
     border: 1px solid #8f8d8a !important;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.railway {
+    font-family: 'Railway', sans-serif;
 }
 
 .overlay {
@@ -153,9 +162,7 @@ a.category-badge > span.badge:hover {
     font-weight: bold;
     color: #3d3d3f;
     text-align: center;
-    margin-top: 20px;
-    text-align: center;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .phoneImageWrapper {
@@ -251,7 +258,7 @@ a.category-badge > span.badge:hover {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #49494B;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -287,7 +294,7 @@ a.category-badge > span.badge:hover {
 }
 
 .arrow-dark {
-    border-bottom-color: #343a40 !important;
+    border-bottom-color: #49494B !important;
 }
 
 .bag-notification-wrapper {
@@ -295,6 +302,30 @@ a.category-badge > span.badge:hover {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/*---------------------------------------------------------------------Footer*/
+.footer {
+    background-color: #D8C3A5;
+    color: #49494B;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.footerText {
+    font-size: 15px;
+}
+
+.socialIconsFooter {
+}
+.socialIconsFooter i {
+    color: #7395AE;
+	font-size: 30px;
+}
+
+.socialIconsFooter i:hover {
+	color: #49494B;
+}
+
 
 /* -------------------------------- Media Queries */
 
