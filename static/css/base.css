@@ -236,7 +236,7 @@ a.category-badge > span.badge:hover {
 }
 
 input[name='q']::placeholder {
-    color: #aab7c4;
+    color: #8f8d8a;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -315,6 +315,7 @@ input[name='q']::placeholder {
     margin-top: 30px;
     grid-row-start: 2;
     grid-row-end: 3;
+    width: 100%;
 }
 
 .footerText {
