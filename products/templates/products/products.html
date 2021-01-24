@@ -64,6 +64,12 @@
                         {{ product.price }} SEK   
                      </p>
                   </a>
+                    {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a class="buttonContact text-blue" href="{% url 'edit_product' product.id %}">Edit</a> 
+                            <a class="buttonContact text-blue" href="{% url 'delete_product' product.id %}">Delete</a>
+                        </small>
+                    {% endif %}
                </div>
             </div>
             {% if forloop.counter|divisibleby:1 %}
