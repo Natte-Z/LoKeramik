@@ -1,5 +1,17 @@
 from django.contrib import admin
 from .models import Course
 
-# Register your models here.
-admin.site.register(Course)
+
+class CourseAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'price',
+        'duration',
+        'participants',
+        'image',
+    )
+
+    ordering = ('price',)
+
+
+admin.site.register(Course, CourseAdmin)
