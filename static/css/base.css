@@ -26,8 +26,6 @@ body {
     width: fit-content;
 }
 
-
-
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -35,10 +33,10 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #3d3d3f;
-    color: white;
+    color: #eae7dc;
 }
 
------------------------------ Colors */
+/* --------------------------------- Colors */
 
 .text-black {
     color: #3d3d3f !important;
@@ -321,8 +319,6 @@ input[name='q']::placeholder {
     font-size: 10px;
 }
 
-.socialIconsFooter {
-}
 .socialIconsFooter i {
     color: #7395AE;
 	font-size: 30px;
