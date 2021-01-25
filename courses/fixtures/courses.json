@@ -1,0 +1,54 @@
+[
+  {
+    "pk": 1,
+    "model": "courses.course",
+    "fields": {
+      "name": "One On One Wheel Class",
+      "description": "This class will take place in my home studio. You will have two days to get to know the clay and begin to form your first pottery items on the first day as well as deal with specific carvings. On the second day we will prepare the items further, you will glaze and then burn the items you did on the first day. In addition, we will create even more pottery, that I will burn later on myself and bring to the store for you to pick up.",
+      "price": 4000,
+      "duration": "2 x 3 hours",
+      "participants": "1",
+      "level": "intermediate",
+      "image": "oshin-khandelwal-EQpXnijYejQ-unsplash.jpg"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "courses.course",
+    "fields": {
+      "name": "Two On Two Wheel Class",
+      "description": "This class will take place in my home studio. You and your +1 will have two days to get to know the clay and begin to form your first pottery items on the first day as well as deal with specific carvings. On the second day we will prepare the items further, you will glaze and then burn the items you did on the first day. In addition, we will create even more pottery, that I will burn later on myself and bring to the store for you to pick up.",
+      "price": 5000,
+      "duration": "2 x 3 hours",
+      "participants": "2",
+      "level": "intermediate",
+      "image": "jessica-ruscello-G8vPQ-XVxxY-unsplash.jpg"
+    }
+  },
+  {
+    "pk": 3,
+    "model": "courses.course",
+    "fields": {
+      "name": "Team Event Day",
+      "description": "This class will take place in my home studio. The course is mostly focused on beginners, because you will share two spinning wheels and learn from each other. As this course is only for one day, you will focus on pottery forming and later on you can choose a glaze. The glazing part I will take over on the coming days after the clay has dried.",
+      "price": 1500,
+      "duration": "1 x 4 hours",
+      "participants": "4",
+      "level": "beginner",
+      "image": "alex-jones-Tq4YjCa2BSc-unsplash.jpg"
+    }
+  },
+  {
+    "pk": 4,
+    "model": "courses.course",
+    "fields": {
+      "name": "Team Event Weekend",
+      "description": "This class will take place in my home studio. The course is mostly focused on beginners, because you will share two spinning wheels and learn from each other. In this two day course you will form the pottery on the first day and glaze and burn it on the second day.",
+      "price": 2500,
+      "duration": "2 x 4 hours",
+      "participants": "4",
+      "level": "beginner",
+      "image": "anne-nygard-sHyerRuFqT4-unsplash.jpg"
+    }
+  }
+]
