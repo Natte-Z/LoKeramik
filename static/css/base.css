@@ -379,7 +379,7 @@ input[name='q']::placeholder {
     }
 
     .header-container {
-        padding-top: 124px;
+        padding-top: 80px !important;
     }
 }
 
