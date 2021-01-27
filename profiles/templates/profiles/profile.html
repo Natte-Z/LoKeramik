@@ -71,6 +71,33 @@
                 </div>
             </div>
         </div>
+<!-- with help from https://www.youtube.com/watch?v=wLZlyjq_mFc&list=PLw02n0FEB3E3VSHjyYMcFadtQORvl1Ssj&index=59         
+    <section>
+            Favourite Products
+            <div class="row">
+            {% for favourite in favourites %}
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+               <div class="cardh-100 border-0 card-image">
+                  {% if favourite.product.image %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ favourite.product.image.url }}" alt="{{ favourite.product.name }}">
+                    </a>
+                    {% else %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.jpeg" alt="{{ favourite.product.name }}">
+                    </a>
+                    {% endif %}
+                     <p class="font-weight-bold text-grey centered-category"> 
+                        {{ favourite.product.price }} SEK   
+                     </p>
+               </div>
+               {% if request.user.is_active%}
+                        <small class="ml-3">
+                            <a class="buttonContact text-blue" href="{% url 'profile:change_favourite' 'operation=remove' pk=favourite.pk %}">Remove Favourite</a>
+                        </small>
+                    {% endif %}
+            </div>
+        </section> -->
 {% endblock %}
 
 {% block postloadjs %}

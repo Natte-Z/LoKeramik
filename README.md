@@ -244,6 +244,8 @@ Image |ImageField | null=True | blank=True
 
 4. **Course add/edit function:** Currently there is no option for the super user to add/edit the courses, but this will also be implemented in the future, but hasnt been done for this project due to lack of time. 
 
+5. **Favourites button update:** At the moment the favourites button works with a get request, which is not very sustainable, because the page needs to reload everytime the user pushes the button. So for future implements it would be good to rethink the button functionality, so that the page does not need to reload once a user wants to add a item to their favourites list. 
+
 ## Technologies Used
 
 -   [HTML5](https://www.w3schools.com/html/)

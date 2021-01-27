@@ -23,13 +23,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100 img-fluid h-100" src="/media/pexels-quang-nguyen-vinh-2162943.jpg" alt="Ceramics class 1">
+      <img class="d-block w-100" src="/media/pexels-quang-nguyen-vinh-2162943.jpg" alt="Ceramics class 1">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 img-fluid h-100" src="/media/pexels-valeria-ushakova-3094225.jpg" alt="Ceramics class 2">
+      <img class="d-block w-100" src="/media/pexels-valeria-ushakova-3094225.jpg" alt="Ceramics class 2">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100 img-fluid h-100" src="/media/courtney-cook-QRVSQH7OeX4-unsplash.jpg" alt="Ceramics class 3">
+      <img class="d-block w-100" src="/media/courtney-cook-QRVSQH7OeX4-unsplash.jpg" alt="Ceramics class 3">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -63,7 +63,7 @@
                 {{ course.name }}
             </h2>
             <div class="courseText">
-              <p>Price: {{ course.price }} SEK</p>  
+              <p>Price p. Person: {{ course.price }} SEK</p>  
             </div>
             <div class="courseText">
                <p>Course duration: {{ course.duration }}</p> 
@@ -80,12 +80,12 @@
             <div class="courseText mt-5">
                 {{ course.description }}
             </div>
-        <hr class="w-100 mb-5 mt-5">
+        <hr class="w-50 mb-5 mt-5">
     </div>
 </div>
     {% endfor %}
-        <div class="col-12">
-            <h2 class="courseTitle mb-5 ">General information</h2>
+        <div class="col-12 bg-color-course mt-5 mb-5">
+            <h2 class="courseTitle">General information</h2>
             <div>The courses as described above are just general ideas on how to create a good pottery experience. If you already have pre knowledge or want to perform only certain tasks that is all possible. The courses are flexible in date and activities and are focused on what you would like to learn and achieve. Just sent me a message through the contact form and we will find out what fits your wishes best. Once you booked one course you can get in contact with me and I will provide you with the possible course dates. 
             </div>
         </div>

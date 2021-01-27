@@ -2,10 +2,23 @@ from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import UserProfile
+#from .models import Favourite
+from products.models import Product
 from .forms import UserProfileForm
 
 from checkout.models import Order
 
+#class ProfileView(TemplateView):
+    #template_name = 'profiles/profile.html'
+
+    #def get(self, request):
+        #products = Product.objects.exclude(id=request.product.id)
+        #profile = get_object_or_404(UserProfile, user=request.user)
+        #favourite = Favourite.objects.get(current_product=request.profile)
+        #favourites = friend.products.all()
+
+    #args = {'users':users, 'favourites': favourites}
+    #return render(request,self.template_name, args)
 
 @login_required
 def profile(request):
@@ -48,3 +61,17 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+#def add_favourite() --> admin shell comments
+ #   favourite = Favourite()
+  #  favourite.save()
+   # favourite.products.add(Product.objects.first(). #UserProfile.objects.last())
+    #
+
+    #def change_favourite(request, operation, pk):
+        #favourite = Product.objects.get(pk=pk)
+        #if operation == 'add': 
+            #Favourite.make_favourite(request.user, new_favourite)
+        #elif operation == 'remove':
+            #Favourite.delete_favourite(request.user, new_favourite)
+        #return redirect ('profiles:profile')

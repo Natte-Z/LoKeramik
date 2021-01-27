@@ -255,6 +255,12 @@ input[name='q']::placeholder {
     margin-right: 20px;
     margin-bottom: 30px;
 }
+
+.bg-color-course {
+    background-color: #D8C3A5;
+}
+
+
     
 /* ------------------------------- bootstrap toasts */
 
@@ -326,7 +332,6 @@ input[name='q']::placeholder {
 
 /*---------------------------------------------------------------------Footer*/
 .footer {
-    background-color: #D8C3A5;
     color: #49494B;
     padding: 7px;
     margin-top: 30px;
