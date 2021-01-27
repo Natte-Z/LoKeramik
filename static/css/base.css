@@ -259,8 +259,33 @@ input[name='q']::placeholder {
 .bg-color-course {
     background-color: #D8C3A5;
 }
+/* -------------------------------- Contact */
 
+.contactTitle {
+    font-size: 40px;
+    color: #c9af98;
+}
 
+.contactForm {
+    color: #3A4660;
+    font-size: 30px;
+}
+
+.contactFormTitle {
+  color: #3A4660;
+  font-family: 'Heebo', sans-serif;
+  font-size: 40px;
+}
+.contactWrapper{
+    height:430px;
+}
+.contactWrapper .contactImage{
+    background: url('../images/tom-crew-7HuTGlUfQSo-unsplash.jpg');
+    background-size:cover;
+    height:406px;
+    margin-top:8px;:egami-dnuorgkcab
+.contactWrapper .contactImage img{
+    object-fit:cover;
     
 /* ------------------------------- bootstrap toasts */
 
@@ -291,9 +316,9 @@ input[name='q']::placeholder {
     right: 36px;
 }
 
-/* Convenience classes - colors copied from Bootstrap */
+/* Convenience classes - colors copied from Bootstrap and slightly edited to maintain the colorscheme*/
 .arrow-primary {
-    border-bottom-color: #007bff !important;
+    border-bottom-color: #7395AE !important;
 }
 
 .arrow-secondary {
@@ -305,15 +330,15 @@ input[name='q']::placeholder {
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 !important;
+    border-bottom-color: #D8C3A5 !important;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 !important;
+    border-bottom-color: #eae7dc !important;
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 !important;
+    border-bottom-color: #7395AE !important;
 }
 
 .arrow-light {
@@ -321,7 +346,7 @@ input[name='q']::placeholder {
 }
 
 .arrow-dark {
-    border-bottom-color: #49494B !important;
+    border-bottom-color: #3d3d3f !important;
 }
 
 .bag-notification-wrapper {
@@ -465,12 +490,12 @@ input[name='q']::placeholder {
 
 .custom-checkbox .custom-control-label::before {
     border-radius: 0;
-    border-color: #dc3545;
+    border-color: #D8C3A5;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #dc3545;
-    border-color: #dc3545;
+    background-color: #D8C3A5;
+    border-color: #D8C3A5;
     border-radius: 0;
 }
 

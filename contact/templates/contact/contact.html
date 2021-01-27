@@ -1,0 +1,57 @@
+<!doctype html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!--Contact_form -->
+<p class="center-align fontHeader contactTitle">Any more recommendations on how to make this website more
+	fabulous and spread the love? </p>
+
+	<!-- hidden alert containers for error handling the contact form -->
+	<h6 class="alert" id="emailAlert">Your email has been sent, you will hear from us shortly</h6>
+	<h6 class="alert" id="emailFail">Oops, there was a problem sending your email</h6>
+
+
+<div class="row contactWrapper">
+	<div class="card-panel col l6 s12">
+		<p class="center-align textColor contactForm">Contact Form</p>
+		<form id="contact-form">
+			<input type="hidden" name="contact_number">
+			<div class=" input-field col s12">
+				<i class="material-icons prefix textColor">account_circle</i>
+				<input type="text" name="user_name" class="form-control fontText textColor" id="user_name" placeholder="Full Name" required/>
+				<label for="icon_prefix">Full Name</label>
+			</div>
+			<div class="input-field col s12">
+				<i class="material-icons prefix textColor">email</i>
+				<input type="email" name="user_email" class="form-control fontText textColor" id="user_email" placeholder="Email" required/>
+				<label for="icon_telephone">Email</label>
+			</div>
+			<div class="input-field col s12">
+				<textarea rows="20" name="message" class="materialize-textarea form-control fontText" id="message" placeholder="Question" required></textarea>
+				<label for="message">Question</label>
+
+
+
+
+				<button class="btn-small waves-effect waves-light textBackground" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+
+			</div>
+		</form>
+	</div>
+
+<!-- placeholder div for background contact image -->
+	<div class="col s12 m12 l6 contactImage"/>
+	</div>
+
+{% endblock %}
