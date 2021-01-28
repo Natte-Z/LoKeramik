@@ -400,15 +400,20 @@ input[name='q']::placeholder {
 }
 
 /*---------------------------------------------------------------------Footer*/
-.footer {
+.footerWrapper {
     color: #49494B;
     padding: 7px;
     margin-top: 30px;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-color: #eae7dc;
+    height: 100%;
+    width: 100%;
     display: flex;
+}
+
+.footer_child{
     flex-direction: baseline;
-    
 }
 
 .footerText {

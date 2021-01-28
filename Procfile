@@ -1,1 +1,1 @@
-web: python mange.py
+web: gunicorn lokeramik.wsgi:application

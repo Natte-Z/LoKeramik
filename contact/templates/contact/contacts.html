@@ -26,6 +26,7 @@
                 <p>Any questions regarding our courses or the products?</p>
                 <p>You can reach us through the contact form!</p>  
     </div>
+    
     <div class="container contactFormContainer">
         <div class="row justify-content-md-center">
            <div class="contactBoxWrapper col-lg-6 ">
@@ -46,7 +47,12 @@
 {% endblock %}
 
 {% block postloadjs %}
-    <script src="contact/static/js/sendEmail.js"></script>
+    {{ block.super }}
+    <script src="/workspace/LoKeramik/contact/static/js/sendEmail.js"></script>
 {% endblock %}
 
-<!--{% static 'contact/js/sendEmail.js' %}-->
+
+
+
+
+<!--{% static 'contact/js/sendEmail.js' %}   contact/static/js/sendEmail.js  -->
