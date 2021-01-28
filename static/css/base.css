@@ -266,7 +266,7 @@ input[name='q']::placeholder {
     background-color: #D8C3A5;
 }
 
-/* -------------------------------- Contact */
+/* -------------------------------- Contact 
 .contactForm {
     padding: 30px;
     color: #49494B;
@@ -293,7 +293,43 @@ input[name='q']::placeholder {
 
 .contactFormTitle {
     font-size: 20px;
+}
+*/
+.contactTitle {
+    font-size: 20px;
+    color: #7395AE;
+}
 
+.contactFormContainer {
+    color: #3d3d3f;
+    font-size: 20px;
+}
+
+.contactFormTitle {
+  color: #3d3d3f;
+  font-size: 30px;
+}
+
+/* emailalert for contactpage */
+.alert{
+    display:none;
+    text-align:center;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+#emailAlert{
+    color: #D8C3A5;
+    background-color: #3d3d3f;
+    border-color: #3d3d3f;
+}
+
+#emailFail{
+    color: #7395AE;
+    background-color: #eae7dc;
+    border-color: #eae7dc;
 }
 /* ------------------------------- bootstrap toasts */
 
