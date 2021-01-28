@@ -4,10 +4,10 @@
 
 LoKeramik is an e-commerce and general contact website offering ceramic products and course services.
 
--   [View the LoKeramik Heroku App](https://kika-stripe-me.herokuapp.com/)
--   [View the repository on GitHub](https://github.com/kescardoso/stripeme)
+-   [View the LoKeramik Heroku App](https://lo-keramik.herokuapp.com/)
+-   [View the repository on GitHub]()
 
-![](https://raw.githubusercontent.com/kescardoso/stripeme/master/media/project-present.png)
+![]()
 
 This is my final project of four Milestone Projects that make up the Full-Stack Web Development Diploma Training at Code Institute. The project's main requirements are: to build a full-stack website with the use of HTML, CSS, JavaScript, Python, Django and a relational database; as well as the implementation of a checkout functionality, which has been achieved through the use of Stripe. 
 
