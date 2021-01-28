@@ -30,7 +30,7 @@ body {
 
 .buttonContact {
     font-family: 'Roboto', sans-serif;
-    background-color: white;
+    background-color: #fafafa;
     border: 2px solid #7395AE;
     color: #7395AE;
     padding: 7px 16px;
@@ -40,6 +40,12 @@ body {
     font-size: 12px;
     cursor: pointer;
     vertical-align: baseline;
+}
+.buttonContact:hover,
+.buttonContact:active,
+.buttonContact:focus {
+    background: #7395AE;
+    color: #fafafa !important;
 }
 
 .shop-now-button:hover,
@@ -259,34 +265,36 @@ input[name='q']::placeholder {
 .bg-color-course {
     background-color: #D8C3A5;
 }
-/* -------------------------------- Contact */
 
-.contactTitle {
-    font-size: 40px;
-    color: #c9af98;
+/* -------------------------------- Contact */
+.contactForm {
+    padding: 30px;
+    color: #49494B;
+    border-color: #49494B; 
 }
 
-.contactForm {
-    color: #3A4660;
+.contactBoxWrapper{
+    padding: 0;
+}
+.contactBox {
+    border: solid #49494B 1px;
+    box-sizing: content-box;
+    padding: 30px;
+}
+
+.contactTitle {
     font-size: 30px;
+    color: #7395AE;
+}
+.form {
+    font-family: 'Roboto', sans-serif;
+    color: #49494B;
 }
 
 .contactFormTitle {
-  color: #3A4660;
-  font-family: 'Heebo', sans-serif;
-  font-size: 40px;
+    font-size: 20px;
+
 }
-.contactWrapper{
-    height:430px;
-}
-.contactWrapper .contactImage{
-    background: url('../images/tom-crew-7HuTGlUfQSo-unsplash.jpg');
-    background-size:cover;
-    height:406px;
-    margin-top:8px;:egami-dnuorgkcab
-.contactWrapper .contactImage img{
-    object-fit:cover;
-    
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
@@ -364,6 +372,7 @@ input[name='q']::placeholder {
     grid-row-end: 3;
     display: flex;
     flex-direction: baseline;
+    
 }
 
 .footerText {

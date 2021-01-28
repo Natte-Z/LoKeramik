@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<section>
+            <div class="uppercase text-center mt-5 railway contactTitle">
+                <p>Any questions regarding our courses or the products?</p>
+                <p>You can reach us through the contact form!</p>  
+            </div>
+            <div class="container contactForm"></div>
+            <div class="row justify-content-md-center">
+               <div class="contactBoxWrapper col-lg-6 ">
+                  <div class="center-form contactBox">
+                     <p class="text-center railway text-black contactFormTitle">Contact form</p>
+                     <form onsubmit="return sendMail(this);" class="form railway">
+                        <input type="text" name="name" class="form-control my-2" id="name" placeholder="Full Name" required/>
+                        <input type="email" name="emailaddress" class="form-control my-2" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="questionsummary" class="form-control my-2" id="questionsummary" placeholder="Question" required></textarea>
+                        <button type="submit" class="btn buttonContact center-block text-center px-4">Send</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script src="{% static 'contact/js/sendEmail.js' %}"></script>
+{% endblock %}
