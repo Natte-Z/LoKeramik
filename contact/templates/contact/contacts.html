@@ -3,15 +3,6 @@
 {% extends "base.html" %}
 {% load static %}
 
-<head>
-	<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("user_TKf54NY2OBMKWEY7MGGO7");
-        })();
-    </script>
-</head>
-
 {% block page_header %}
     <div class="container header-container">
         <div class="row">
@@ -26,18 +17,21 @@
                 <p>Any questions regarding our courses or the products?</p>
                 <p>You can reach us through the contact form!</p>  
     </div>
+    <!-- hidden alert containers for error handling the contact form -->
+	<h6 class="alert" id="emailAlert">Your email has been sent, you will hear from us shortly</h6>
+	<h6 class="alert" id="emailFail">Oops, there was a problem sending your email</h6>
     
     <div class="container contactFormContainer">
         <div class="row justify-content-md-center">
            <div class="contactBoxWrapper col-lg-6 ">
             <div class="center-form contactBox">
                  <p class="text-center railway text-black contactFormTitle">Contact form</p>
-                 
-                 <form onsubmit="return sendMail(this);" class="form railway" id="contactForm" method="POST">
+                 <form id="contactForm">
                     {% csrf_token %}
-                    <input type="text" name="name" class="form-control my-2" id="name" placeholder="Full Name"required/>
-                    <input type="email" name="emailaddress" class="form-control my-2" id="emailaddress"placeholder="Email" required/>
-                    <textarea rows="5" name="questionsummary" class="form-control my-2" id="questionsummary"placeholder="Question" required></textarea>
+                    <input type="text" name="user_name" class="form-control my-2" id="user_name" placeholder="Full Name"required/>
+                    <input type="email" name="user_email" class="form-control my-2" id="user_email"placeholder="Email" required/>
+                    <textarea rows="5" name="message" class="form-control my-2" id="message"placeholder="Question" required>
+                    </textarea>
                     <button type="submit" class="btn buttonContact center-block text-center px-4">Send</button>
                 </form>
             </div>

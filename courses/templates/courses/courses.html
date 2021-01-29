@@ -74,15 +74,16 @@
          <div class="courseText">
             <p>Course level: {{ course.level }}</p>
          </div>
-         <a href="#" class="buttonContact text-blue mt-3">Contact us to book a course</a>
+         <a href="{% url 'contacts' %}" class="buttonContact text-blue mt-3">Contact us to book a course</a>
       </div>
       <div class="courseText mt-5">
          {{ course.description }}
       </div>
-      <hr class="w-50 mb-5 mt-5">
+      
+      {% endfor %}
    </div>
+   <hr class="w-50 mb-5 mt-5">
 </div>
-    {% endfor %}
         <div class="col-12 bg-color-course mt-5 mb-5">
             <h2 class="courseTitle">General information</h2>
             <div>

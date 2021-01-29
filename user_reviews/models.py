@@ -3,6 +3,8 @@ from profiles.models import UserProfile
 from courses.models import Course
 
 # Create your models here.
+
+
 class UserReview(models.Model):
     """
     Allows users who have already booked a retreat to
@@ -20,7 +22,7 @@ class UserReview(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name="user_service",
+        related_name="user_course",
     )
     review_title = models.CharField(max_length=200)
     review_content = models.TextField(blank=True, null=True, default="")
