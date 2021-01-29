@@ -32,8 +32,9 @@
            <div class="contactBoxWrapper col-lg-6 ">
             <div class="center-form contactBox">
                  <p class="text-center railway text-black contactFormTitle">Contact form</p>
-                 {% csrf_token %}
+                 
                  <form onsubmit="return sendMail(this);" class="form railway" id="contactForm" method="POST">
+                    {% csrf_token %}
                     <input type="text" name="name" class="form-control my-2" id="name" placeholder="Full Name"required/>
                     <input type="email" name="emailaddress" class="form-control my-2" id="emailaddress"placeholder="Email" required/>
                     <textarea rows="5" name="questionsummary" class="form-control my-2" id="questionsummary"placeholder="Question" required></textarea>
@@ -48,11 +49,6 @@
 
 {% block postloadjs %}
     {{ block.super }}
-    <script src="/workspace/LoKeramik/contact/static/js/sendEmail.js"></script>
+    <script src="{% static 'js/sendEmail.js' %}">
+    </script>
 {% endblock %}
-
-
-
-
-
-<!--{% static 'contact/js/sendEmail.js' %}   contact/static/js/sendEmail.js  -->

@@ -19,7 +19,8 @@ class UserProfile(models.Model):
     default_county = models.CharField(max_length=80, null=True, blank=True)
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
     default_country = CountryField(blank_label='Country', null=True, blank=True)
-   # product = models.ForeignKey('products.Product', on_delete=models.SET_NULL)
+    favourites = models.ManyToManyField(Product)
+
 
     def __str__(self):
         return self.user.username
@@ -39,8 +40,8 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 #class Favourite(models.Model):
  #   """Allows users to have favourite products"""
-   # products = models.ManyToManyField(product)
-    #current_profile = models.ForeignKey(Profile, related_name='Profile', null=True)
+   # products = models.ManyToManyField(product, verbose_name="list of products")
+    #current_profile = models.ForeignKey(UserProfile, related_name='UserProfile', null=True)
 
     #@classmethod
     #def make_favourite(cls, current_product), new_favourite):

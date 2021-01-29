@@ -83,7 +83,9 @@
                                 </a>
                                 <input type="submit" class="btn buttonContact rounded-0 text-uppercase mt-5" value="Add to Bag">
                                 <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                
+                                <a href="{% url 'change_favourite' operation='add' pk=product.id %}" class="btn buttonContact rounded-0 mt-5">
+                                    <span class="text-uppercase">add to favourites</span>
+                                </a>
                             </div>
                         </div>
                     </form>
