@@ -42,8 +42,8 @@ def review_new(request):
                 messages.success(request, 'Successfully added review!')
                 return redirect(reverse('user_reviews')
             else:
-                messages.error(request, 'Failed to add review. \
-                    Please ensure the form is valid.')
+                messages.error(request, 'Failed to add review.\
+                            Please ensure the form is valid.')
         else:
             review_form = ReviewForm()
 

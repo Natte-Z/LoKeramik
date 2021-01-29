@@ -9,17 +9,17 @@
         </div>
     </div>
 {% endblock %}
-
+<!----------------AddReview-->
 {% block content %}
 <div class="col-12 col-md-8 offset-md-2 mt-3">
-    <h2 class="standard-title text-center">Add a new post below:
+    <h2 class="standard-title text-center">Add a new review below:
     </h2>
     <div class="form-box mb-5 mt-3">
-        <form class="pt-5 pt-md-1" action="{% url 'new_blog' %}" method="POST" id="new-blog-form">
+        <form class="pt-5 pt-md-1" action="{% url 'new_post' %}" method="POST" id="new-post-form">
             {% csrf_token %}
-            {{ blog_form|crispy }}
+            {{ review_form|crispy }}
             <div class="text-center mt-5">
-                <button class="standard-btn dark-btn">Add post</button>
+                <button class="btn buttonContact text-blue">Add review</button>
             </div>
         </form>
     </div>
