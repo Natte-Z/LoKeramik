@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<div class="col-12 col-md-8 offset-md-2 mt-3">
+    <h2 class="standard-title text-center">Add a new post below:
+    </h2>
+    <div class="form-box mb-5 mt-3">
+        <form class="pt-5 pt-md-1" action="{% url 'new_blog' %}" method="POST" id="new-blog-form">
+            {% csrf_token %}
+            {{ blog_form|crispy }}
+            <div class="text-center mt-5">
+                <button class="standard-btn dark-btn">Add post</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

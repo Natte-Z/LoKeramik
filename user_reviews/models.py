@@ -22,10 +22,11 @@ class UserReview(models.Model):
         on_delete=models.SET_NULL,
         null=True,
         blank=True,
-        related_name="user_course",
+        related_name="course",
     )
     review_title = models.CharField(max_length=200)
-    review_content = models.TextField(blank=True, null=True, default="")
+    review_content = models.TextField(
+        blank=True, null=True, default="")
 
     class Meta:
         ordering = ['course']

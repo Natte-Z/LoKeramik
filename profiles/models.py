@@ -21,9 +21,9 @@ class UserProfile(models.Model):
     default_country = CountryField(blank_label='Country', null=True, blank=True)
     favourites = models.ManyToManyField(Product)
 
-
     def __str__(self):
         return self.user.username
+
 
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
