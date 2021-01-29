@@ -5,7 +5,7 @@
 LoKeramik is an e-commerce and general contact website offering ceramic products and course services.
 
 -   [View the LoKeramik Heroku App](https://lo-keramik.herokuapp.com/)
--   [View the repository on GitHub]()
+-   [View the repository on GitHub](https://github.com/Natte-Z/LoKeramik)
 
 ![]()
 
@@ -18,38 +18,37 @@ LoKeramik is therefore a Python-Django web application, backed by a PostgreSQL (
 It is also to mention that the project was created in discussion with a local client I have in Stockholm and that the Stripe test-functionality will be changed lateronwards. 
 
 
-[Click here to view the project live.](https://kika-stripe-me.herokuapp.com/)
+[Click here to view the project live.](https://lo-keramik.herokuapp.com/)
   
 As you read this document, you will find my complete development process, from UX strategy to deployment.
 
 ## Contents table
 
- - [UX](https://github.com/kescardoso/stripeme#ux)
-	 - [Wireframe](https://github.com/kescardoso/stripeme#wireframe)
-	 - [Color Palette](https://github.com/kescardoso/stripeme#color-palette)
- - [User Stories](https://github.com/kescardoso/stripeme#user-stories)
-	 - [User and Their Goals](https://github.com/kescardoso/stripeme#user-and-their-goals)
-	 - [User Avatar](https://github.com/kescardoso/stripeme#user-avatar)
-	 - [User's Main Challenges](https://github.com/kescardoso/stripeme#users-main-challenges)
- - [Database Structure](https://github.com/kescardoso/stripeme#database-structure)
-	 - [Profiles App](https://github.com/kescardoso/stripeme#profiles-app)
-	 - [Checkout App](https://github.com/kescardoso/stripeme#checkout-app)
-	 - [Services App](https://github.com/kescardoso/stripeme#services-app)
-	 - [Designs App](https://github.com/kescardoso/stripeme#designs-app)
-	 - [Webdevs App](https://github.com/kescardoso/stripeme#webdevs-app)
- - [Features](https://github.com/kescardoso/stripeme#features)
-	 - [Existing Features](https://github.com/kescardoso/stripeme#existing-features)
-	 - [Features Left to Implement](https://github.com/kescardoso/stripeme#features-left-to-implement)
- - [Technologies Used](https://github.com/kescardoso/stripeme#technologies-used)
- - [Testing](https://github.com/kescardoso/stripeme#testing)
-	 - [Defensive Design](https://github.com/kescardoso/stripeme#defensive-design)
-	 - [Validators and Formatters](https://github.com/kescardoso/stripeme#validators-and-formatters)
-	 - [Compatibility Tests](https://github.com/kescardoso/stripeme#compatibility-tests)
- - [Deployment](https://github.com/kescardoso/stripeme#deployment)
-	 - [Local Deployment](https://github.com/kescardoso/stripeme#local-deployment)
-	 - [Heroku Deployment](https://github.com/kescardoso/stripeme#heroku-deployment)
- - [Credits](https://github.com/kescardoso/stripeme#credits)
- - [Acknowledgements](https://github.com/kescardoso/stripeme#acknowledgements)
+ - [UX](https://github.com/Natte-Z/LoKeramik#ux)
+	 - [Wireframe](https://github.com/Natte-Z/LoKeramik#wireframe)
+	 - [Color Palette](https://github.com/Natte-Z/LoKeramik#color-palette)
+ - [User Stories](https://github.com/Natte-Z/LoKeramik#user-stories)
+	 - [User and Their Goals](https://github.com/Natte-Z/LoKeramik#user-and-their-goals)
+	 - [User Avatar](https://github.com/Natte-Z/LoKeramik#user-avatar)
+	 - [User's Main Challenges](https://github.com/Natte-Z/LoKeramik#users-main-challenges)
+ - [Database Structure](https://github.com/Natte-Z/LoKeramik#database-structure)
+	 - [Profiles App](https://github.com/Natte-Z/LoKeramik#profiles-app)
+	 - [Checkout App](https://github.com/Natte-Z/LoKeramik#checkout-app)
+	 - [Products App](https://github.com/Natte-Z/LoKeramik#products-app)
+	 - [Courses App](https://github.com/Natte-Z/LoKeramik#courses-app)
+ - [Features](https://github.com/Natte-Z/LoKeramik#features)
+	 - [Existing Features](https://github.com/Natte-Z/LoKeramik#existing-features)
+	 - [Features Left to Implement](https://github.com/Natte-Z/LoKeramik#features-left-to-implement)
+ - [Technologies Used](https://github.com/Natte-Z/LoKeramik#technologies-used)
+ - [Testing](https://github.com/Natte-Z/LoKeramik#testing)
+	 - [Defensive Design](https://github.com/Natte-Z/LoKeramik#defensive-design)
+	 - [Validators and Formatters](https://github.com/Natte-Z/LoKeramik#validators-and-formatters)
+	 - [Compatibility Tests](https://github.com/Natte-Z/LoKeramik#compatibility-tests)
+ - [Deployment](https://github.com/Natte-Z/LoKeramik#deployment)
+	 - [Local Deployment](https://github.com/Natte-Z/LoKeramik#local-deployment)
+	 - [Heroku Deployment](https://github.com/Natte-Z/LoKeramik#heroku-deployment)
+ - [Credits](https://github.com/Natte-Z/LoKeramik#credits)
+ - [Acknowledgements](https://github.com/Natte-Z/LoKeramik#acknowledgements)
 
 ## UX
 

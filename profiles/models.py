@@ -37,18 +37,3 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
     def __str__(self):
         return self.review_title
-
-#class Favourite(models.Model):
- #   """Allows users to have favourite products"""
-   # products = models.ManyToManyField(product, verbose_name="list of products")
-    #current_profile = models.ForeignKey(UserProfile, related_name='UserProfile', null=True)
-
-    #@classmethod
-    #def make_favourite(cls, current_product), new_favourite):
-        #favourite, created = cls.objects_get_or_create(current_product=current_product)
-        #favourite.users.add(new_favourite)
-    
-    #@classmethod
-    #def delete_favourite(cls, current_product), new_favourite):
-        #favourite, created = cls.objects_get_or_create(current_product=current_product)
-        #favourite.users.remove(new_favourite)

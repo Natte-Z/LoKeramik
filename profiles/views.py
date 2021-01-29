@@ -7,17 +7,6 @@ from .forms import UserProfileForm
 
 from checkout.models import Order
 
-#class ProfileView(TemplateView):
-    #template_name = 'profiles/profile.html'
-
-    #def get(self, request):
-        #products = Product.objects.exclude(id=request.product.id)
-        #profile = get_object_or_404(UserProfile, user=request.user)
-        #favourite = Favourite.objects.get(current_product=request.profile)
-        #favourites = favourite.products.all()
-
-    #args = {'users':users, 'favourites': favourites}
-    #return render(request,self.template_name, args)
 
 @login_required
 def profile(request):
@@ -63,10 +52,11 @@ def order_history(request, order_number):
 
     return render(request, template, context)
 
+
 def change_favourite(request, operation, pk):
     favourite = Product.objects.get(pk=pk)
     profile = get_object_or_404(UserProfile, user=request.user)
-    if operation == 'add': 
+    if operation == 'add':
         profile.favourites.add(favourite)
     elif operation == 'remove':
         profile.favourites.remove(favourite)
