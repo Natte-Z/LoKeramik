@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    overflow-x: hidden!important;
 }
 body {
     color: #3d3d3f;
@@ -179,7 +180,6 @@ a.category-badge > span.badge:hover {
 }
 
 .image_ceramics {
-    
     height: 100%;
     width: 100%;
 }
@@ -253,7 +253,6 @@ input[name='q']::placeholder {
     font-family: 'Railway', sans-serif;
     font-weight: bold;
     font-size: 20px;
-    padding-top: 50px;
 }
 
 .courseText {
@@ -266,6 +265,8 @@ input[name='q']::placeholder {
 .bg-color-course {
     background-color: #D8C3A5;
 }
+
+
 
 /* -------------------------------- Reviews */
 
@@ -396,20 +397,14 @@ input[name='q']::placeholder {
 /*----------------------------------------------Footer*/
 .footerWrapper {
     color: #49494B;
-    margin-top: 50px;
-    height: 100%;
-    width: 100%;
+    margin-top: 80px;
     position: relative;
 }
 
 .footerChild {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background-color: #eae7dc;
     padding: 7px;
-    margin-top: 20px;
 }
 
 .footerText {
@@ -544,7 +539,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
-/* fixed top navbar only on medium and up */
+/*  medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -553,26 +548,40 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
-
     .header-container {
         padding-top: 164px;
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/*  mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 76px;
     }
-}
-@media (min-width: 992px) {
-    .contactContent {
+    .contactInfo {
         padding-top: 76px;
+        margin-bottom: 20px;
     }
-}
-
-@media (min-width: 992px) {
     .image_ceramics {
-        padding-top: 76px;
+        padding-top: 10px;
+        height: 70%;
+        width: 100%;
+    }
+    .homeText {
+        font-size: 1.3rem;
+        padding-top: 340px;
+        padding-left: 150px;
+    }
+    .btt-button {
+        margin-top: 50px !important;
+    }
+    .courseText {
+        text-align: center;
+    }
+    .courseTitle {
+        text-align: center;
+    }
+    .coursesButton {
+        text-align: center !important;
     }
 }

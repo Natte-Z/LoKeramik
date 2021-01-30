@@ -26,8 +26,8 @@
         <div class="row justify-content-md-center">
            <div class="contactBoxWrapper col-lg-6 ">
             <div class="center-form contactBox">
-                 <p class="text-center railway text-black contactFormTitle">Contact form</p>
-                 <form id="contactForm">
+                 <p class="text-center railway text-black contactFormTitle mt-4">Contact form</p>
+                 <form id="contactForm" class="mx-5 ">
                     {% csrf_token %}
                     <input type="text" name="user_name" class="form-control my-2" id="user_name" placeholder="Full Name"required/>
                     <input type="email" name="user_email" class="form-control my-2" id="user_email"placeholder="Email" required/>

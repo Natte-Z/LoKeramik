@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404,redirect, reverse
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 
 from .models import UserReview
