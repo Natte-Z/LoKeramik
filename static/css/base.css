@@ -399,21 +399,15 @@ input[name='q']::placeholder {
     overflow-y: auto;
 }
 
-/*---------------------------------------------------------------------Footer*/
+/*----------------------------------------------Footer*/
 .footerWrapper {
     color: #49494B;
     padding: 7px;
     margin-top: 30px;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    background-color: #eae7dc;
     height: 100%;
     width: 100%;
-    display: flex;
-}
-
-.footer_child{
-    flex-direction: baseline;
+    margin-top: auto;
+    background-color: #eae7dc;
 }
 
 .footerText {

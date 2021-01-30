@@ -3,7 +3,6 @@ from django.contrib import messages
 
 from .models import UserReview
 from profiles.models import UserProfile
-from courses.models import Course
 from .forms import ReviewForm
 
 from django.contrib.auth.decorators import login_required
@@ -26,7 +25,7 @@ def all_reviews(request):
 
 
 @login_required
-def review_new(request):
+def add_review(request):
     """ Add a new review as a user """
     user_profile = UserProfile.objects.get(user=request.user)
 
@@ -38,12 +37,12 @@ def review_new(request):
             if review_form.is_valid():
                 new_post = review_form.save(commit=False)
                 new_post.user_profile = user_profile
-                review_form.save()
+                new_post.save()
                 messages.success(request, 'Successfully added review!')
-                return redirect(reverse('user_reviews')
+                return redirect(reverse('user_reviews'))
             else:
-                messages.error(request, 'Failed to add review.\
-                            Please ensure the form is valid.')
+                messages.error(request, 'Failed to add review. \
+                                Please ensure the form is valid.')
         else:
             review_form = ReviewForm()
 

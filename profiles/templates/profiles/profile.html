@@ -74,13 +74,18 @@
                 </div>
             </div>
         </div>
+    </div>
 <!------Favourite Products---------------->
 
 <!-- with help from https://www.youtube.com/watch?v=wLZlyjq_mFc&list=PLw02n0FEB3E3VSHjyYMcFadtQORvl1Ssj&index=59 -->        
-<section>
-   <div class="text-blue mt-4 mb-4">Favourite Products
-   </div>
-   <div class="product-container col-10 offset-1">
+<div>
+   <div class="row">
+            <div class="col">
+                <h4 class="logo-font mb-4 text-center mt-5">Favourite Products</h4>
+                <hr>
+            </div>
+        </div>
+   <div class="favourites-container col-10 offset-1">
       <div class="row">
          {% for favourite in favourites %}
             <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
@@ -99,36 +104,15 @@
                   </p>
                </div>
                {% if request.user.is_active%}
-               <small class="ml-3">
+               <small class="mt-3 mb-5">
                <a class="buttonContact text-blue mt-4 float-left" href="{% url 'change_favourite' operation='remove' pk=favourite.pk %}">Remove Favourite</a>
                </small>
-               {% endif %}
-               {% if forloop.counter|divisibleby:1 %}
-               <div class="col-12 d-sm-none mb-5">
-                  <hr>
-               </div>
-               {% endif %}
-               {% if forloop.counter|divisibleby:2 %}
-               <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
-                  <hr>
-               </div>
-               {% endif %}
-               {% if forloop.counter|divisibleby:3 %}
-               <div class="col-12 d-none d-lg-block d-xl-none mb-5">
-                  <hr>
-               </div>
-               {% endif %}
-               {% if forloop.counter|divisibleby:4 %}
-               <div class="col-12 d-none d-xl-block mb-5">
-                  <hr>
-               </div>
                {% endif %}
                {% endfor %}
             </div>
       </div>
    </div>
-</section>
-
+</div>
 {% endblock %}
 
 {% block postloadjs %}

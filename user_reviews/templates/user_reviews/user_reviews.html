@@ -11,7 +11,7 @@
     </div>
 {% endblock %}
 {% block content %}
-<!----------------UserREviews-->
+<!----------------UserReviews-->
 <section>
     <div class="container">
     <h2 class="logo-font">User Reviews</h2>
@@ -23,7 +23,9 @@
             {{ user_review.review_title }}
         </h2>
         <div>Review by: {{ user_review.user_profile }}</div>
+        <div>Regarding course: {{ user_review.course }}</div>
         <div>{{ user_review.review_content }}</div>
+        {% endfor %}
     </div>
     </div>
     </div>
