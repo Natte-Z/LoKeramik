@@ -104,8 +104,10 @@
                   </p>
                </div>
                {% if request.user.is_active%}
-               <small class="mt-3 mb-5">
-               <a class="buttonContact text-blue mt-4 float-left" href="{% url 'change_favourite' operation='remove' pk=favourite.pk %}">Remove Favourite</a>
+               <small class="mt-3">
+               <a class="buttonContact text-blue mt-4 float-left mb-5" href="{% url 'change_favourite' operation='remove' pk=favourite.pk %}">
+                   Remove Favourite
+                </a>
                </small>
                {% endif %}
                {% endfor %}

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, get_object_or_404,redirect, reverse
 from django.contrib import messages
 
 from .models import UserReview
@@ -38,7 +38,7 @@ def new_review(request):
                 new_post = review_form.save(commit=False)
                 new_post.user_profile = user_profile
                 new_post.save()
-                messages.success(request, 'Successfully added review!')
+                messages.info(request, 'Successfully added review!')
                 return redirect(reverse('user_reviews'))
             else:
                 messages.error(request, 'Failed to add review. \

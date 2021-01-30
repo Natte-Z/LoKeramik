@@ -2,10 +2,10 @@
 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
     <!----------------MainNavBar-->
    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 list-inline list-unstyled navbar-fixed-top">
-      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0 text-center">
          <a class="text-grey nav-link text-center text-lg-right" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0 text-center">
          <a class="text-grey nav-link" href="{% url 'products' %}" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                <p class="my-0">Ceramics</p>
@@ -18,7 +18,7 @@
             <a href="{% url 'products' %}?category=interior" class="dropdown-item text-blue text-center">Interior</a>
          </div>
       </li>
-      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0 text-center">
          <a class="text-grey nav-link" href="{% url 'courses' %}" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                <p class="my-0">Courses</p>
@@ -32,13 +32,15 @@
             {% endif %}
          </div>
       </li>
-      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <li class="nav-item col-12 col-lg-3 my-auto py-1 py-lg-0 text-center">
          <a class="text-grey nav-link text-center" href="{% url 'contacts' %}">
             <p class="m-0">Contact</p>
          </a>
       </li>
+   </ul>
       <!----------------MainNavBarIcons-->
-      <li class="list-inline-item dropdown col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <ul class="d-flex flex-row">
+      <li class="list-inline-item dropdown col-lg-6 col-sm-3 my-auto py-1 py-lg-0 justify-content-right text-center">
          <a class="text-grey nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <div class="text-center">
                <div>
@@ -47,7 +49,7 @@
                <p class="my-0">My Account</p>
             </div>
          </a>
-         <div class="dropdown-menu border-0 text-center" aria-labelledby="user-options">
+         <div class="dropdown-menu border-0 " aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
             <a href="{% url 'add_product' %}" class="dropdown-item text-blue">Product Management</a>
@@ -60,14 +62,14 @@
             {% endif %}
          </div>
       </li>
-      <li class="list-inline-item col-12 col-lg-3 my-auto py-1 py-lg-0">
+      <li class="list-inline-item col-lg-6 col-sm-3 my-auto py-1 py-lg-0 justify-content-right text-center">
          <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-grey{% endif %} nav-link" href="{% url 'view_bag' %}">
-            <div class="text-center">
+            <div class="text-center justify-content-center">
                <div>
                   <i class="fas fa-shopping-bag fa-lg">
                   </i>
                </div>
-               <p class="my-0">
+               <p class="my-0 text-center">
                   {% if grand_total %}
                   {{ grand_total|floatformat:2 }} SEK
                   {% else %}

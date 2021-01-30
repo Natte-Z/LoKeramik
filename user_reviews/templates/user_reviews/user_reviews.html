@@ -14,10 +14,10 @@
 <!----------------UserReviews-->
 <div class="reviewImage"></div>
 <section>
-    <div class="container">
+    <div class="container mb-5">
         <h2 class="logo-font text-center mt-5 railway">User Reviews</h2>
         <hr class="w-50 mb-5">
-        <div class="row border border-grey mb-5">
+        <div class="row border border-grey ">
             {% for user_review in user_reviews %}
                 <div class="col-12 col-md-10 ml-md-5 mt-5 mb-3">
                     <h3 class=" mb-3 railway">
@@ -34,6 +34,7 @@
                             {{ user_review.review_content }}
                         </div>
                     </div>
+                    <hr class="w-50 mb-5">
                 </div>
             {% endfor %}
         </div>

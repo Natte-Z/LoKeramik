@@ -19,9 +19,11 @@
             {% csrf_token %}
             {{ review_form|crispy }}
             <div class="text-center mt-5">
-                <button class="btn buttonContact text-blue">Add review</button>
+                <button class="btn buttonContact text-blue mb-5">Add review</button>
             </div>
+            
         </form>
+        
     </div>
 </div>
 {% endblock %}
