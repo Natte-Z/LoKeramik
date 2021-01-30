@@ -1,7 +1,6 @@
 html {
     height: 100%;
 }
-
 body {
     color: #3d3d3f;
     font-family: 'Roboto', sans-serif;
@@ -19,7 +18,7 @@ body {
 
 .logo-font {
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Railway', sans-serif;
 }
 
 .main-logo-link {
@@ -183,11 +182,11 @@ a.category-badge > span.badge:hover {
 
 .contactInfo {
     background-color: #8f8d8a;
-    padding: 50px;
+    padding: 70px;
     font-weight: bold;
     color: #eae7dc;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 16px;
     height: auto;
     display: flex;
@@ -195,10 +194,9 @@ a.category-badge > span.badge:hover {
 }
 
 .contactContent{
-    padding: 50px;
     font-weight: bold;
     color: #eae7dc;
-    text-align: center;
+    align-items: center;
 }
 
 .phoneImageWrapper {
@@ -266,35 +264,28 @@ input[name='q']::placeholder {
     background-color: #D8C3A5;
 }
 
-/* -------------------------------- Contact 
-.contactForm {
-    padding: 30px;
-    color: #49494B;
-    border-color: #49494B; 
+/* -------------------------------- Reviews */
+
+.reviewImage {
+    background: url('/media/juliet-furst-tFteUnwflA0-unsplash.jpg');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    height: 50%;
+    width: 100%;
 }
 
-.contactBoxWrapper{
-    padding: 0;
-}
-.contactBox {
-    border: solid #49494B 1px;
-    box-sizing: content-box;
-    padding: 30px;
+/* -------------------------------- Contact */
+
+.contactImage {
+    background: url('/media/norris-packer-9aDG6Y21fY4-unsplash.jpg');
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    height: 50%;
+    width: 100%;
 }
 
-.contactTitle {
-    font-size: 30px;
-    color: #7395AE;
-}
-.form {
-    font-family: 'Roboto', sans-serif;
-    color: #49494B;
-}
-
-.contactFormTitle {
-    font-size: 20px;
-}
-*/
 .contactTitle {
     font-size: 20px;
     color: #7395AE;
@@ -402,12 +393,20 @@ input[name='q']::placeholder {
 /*----------------------------------------------Footer*/
 .footerWrapper {
     color: #49494B;
-    padding: 7px;
-    margin-top: 30px;
+    margin-top: 50px;
     height: 100%;
     width: 100%;
-    margin-top: auto;
+    position: relative;
+}
+
+.footerChild {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: #eae7dc;
+    padding: 7px;
+    margin-top: 20px;
 }
 
 .footerText {
@@ -423,7 +422,6 @@ input[name='q']::placeholder {
 .socialIconsFooter i:hover {
 	color: #49494B;
 }
-
 
 /* -------------------------------- Media Queries */
 
@@ -564,3 +562,7 @@ input[name='q']::placeholder {
         padding-top: 76px;
     }
 }
+@media (min-width: 992px) {
+    .contactContent {
+        padding-top: 76px;
+    }

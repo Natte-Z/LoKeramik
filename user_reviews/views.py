@@ -25,7 +25,7 @@ def all_reviews(request):
 
 
 @login_required
-def add_review(request):
+def new_review(request):
     """ Add a new review as a user """
     user_profile = UserProfile.objects.get(user=request.user)
 
@@ -46,7 +46,7 @@ def add_review(request):
         else:
             review_form = ReviewForm()
 
-        template = 'user_reviews/user_reviews.html'
+        template = 'user_reviews/review_form.html'
         context = {
             'review_form': review_form,
         }

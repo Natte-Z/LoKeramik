@@ -15,7 +15,7 @@
     <h2 class="standard-title text-center">Add a new review below:
     </h2>
     <div class="form-box mb-5 mt-3">
-        <form class="pt-5 pt-md-1" action="{% url 'new_post' %}" method="POST" id="new-post-form">
+        <form class="pt-5 pt-md-1" action="{% url 'new_review' %}" method="POST" id="new-post-form">
             {% csrf_token %}
             {{ review_form|crispy }}
             <div class="text-center mt-5">
