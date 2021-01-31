@@ -1,4 +1,6 @@
 # LoKeramik
+## Milestone Project 4
+![Lokeramik Responsive Design](https://github.com/Natte-Z/LoKeramik/blob/94bec578ddcdd2bbf57006f74e0e8ddd4a94381f/documentation/readme_images/responsive.png)
 
 ## Introduction
 
@@ -376,7 +378,7 @@ I tested this project on the following devices:
 - *Account* - opens a drop down menu with the following content:
     * Users not in session: *Sign In* and *Sign Up*, leading to respective forms.
     * Users who have signed in: *My Profile* and *Sign Out*. Each link leads to their respective pages.
-    * Users with items in their retreat: additionally, *Checkout* is added which directs them to the checkout page.
+    * Users with items in their bag: additionally, *Checkout* is added which directs them to the checkout page.
 
 #### Footer
 - Clicking on the Instagram icon directs the user to the respective websites on new tabs.
